@@ -71,7 +71,7 @@ typedef struct {
 ## ソースコードの説明
 　InsertNewNodeという関数ではリストの先頭にデータを挿入する関数を作る。まず、新しい要素のデータ領域を確保する。pNodeには新たに確保したデータ領域の先頭が入る。次に [pNode->city = newCity と　pNode->pNext = pNext] のところでは、データを代入する場所を決め、そこにデータを挿入している。先頭をpTopに入れるという操作はmain関数でされているのでreturn値には先頭アドレスのpNodeを返す。これがmain関数のwhile文で繰り返されることでリストが作成される。
 
-　SearchCityByNameという関数ではまずresultという値に-1を代入しておく。こうすることでreturn値が-1のままだとmain関数でcityが見つからないと言われ、そのようなIDがないということが分かる。for文では、もしIDが一致した場合にはpCityのアドレスにcityのアドレスを代入し、resultにはposの値を代入してfor文を抜け出す。pNode = pNode->pNextで次のNodeにいっている。return値にはresultを入れる。
+　SearchCityByIDという関数ではまずresultという値に-1を代入しておく。こうすることでreturn値が-1のままだとmain関数でcityが見つからないと言われ、そのようなIDがないということが分かる。for文では、もしIDが一致した場合にはpCityのアドレスにcityのアドレスを代入し、resultにはposの値を代入してfor文を抜け出す。pNode = pNode->pNextで次のNodeにいっている。return値にはresultを入れる。
 # 出力結果
 
 ```
