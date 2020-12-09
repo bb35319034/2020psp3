@@ -72,7 +72,7 @@ char* BMSearch(char text[], char key[])
 
                 if(pos==0)
                 {
-                    return &text[start];
+                    return &text[start+1];
                 }
             }
             else 

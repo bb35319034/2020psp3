@@ -48,4 +48,4 @@ BM Search. Find keyword at: wind in my hair.
 ```
 
 ## 修正履歴
-
+修正前は、文字を比較した後、returnする前にstart--を実行しているので、test[start]はキーの先頭より一つ前の文字('w'の前の文字)をさしていました。キーの先頭('w'の位置)をさすためにstartに+1する。
